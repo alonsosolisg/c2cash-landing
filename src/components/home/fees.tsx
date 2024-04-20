@@ -8,12 +8,14 @@ import Button from "../reusable/button";
 
 const Fees = () => {
   return (
-    <div className="w-full gap-[25px] h-fit xs:px-[25px] sm:px-[50px] md:px-[75px] text-text lg:px-[75px] xl:px-[150px] py-[100px] bg-gradient-to-br from-blue-400 to-indigo-300 justify-between xs:flex-col lg:flex-row items-center flex">
+    <div
+      id="fees"
+      className="w-full gap-[25px] h-fit xs:px-[25px] sm:px-[50px] md:px-[75px] text-text lg:px-[75px] xl:px-[150px] py-[100px] bg-gradient-to-br from-blue-400 to-indigo-300 justify-between xs:flex-col lg:flex-row items-center flex"
+    >
       <div className="flex-col justify-center items-start gap-[30px] inline-flex">
         <div className="w-fit flex xs:text-[40px] sm:text-[50px] lg:text-[70px] xs:leading-[40px] sm:leading-[50px] lg:leading-[75px] font-circular text-white flex-col">
-          <span className=" flex font-medium">Less Fees, Less</span>
+          <span className=" flex font-medium w-max">Lower Fees, Less</span>
           <span className=" gap-4 flex font-medium">
-            {" "}
             Hassle <FaArrowUpRightDots className="text-accent" /> Just
           </span>
           <span className="flex font-medium">Go to the Closest</span>
@@ -26,7 +28,6 @@ const Fees = () => {
         </div>
         <Button action={() => {}} text="Start Now" variant="primary" />
       </div>
-      <div className="w-full h-[529px] bg-white rounded-[25px] shadow border border-zinc-400 border-opacity-30" />
     </div>
   );
 };

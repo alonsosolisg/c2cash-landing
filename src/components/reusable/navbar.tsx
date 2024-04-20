@@ -57,10 +57,10 @@ const Navbar = ({
           <Link href={"#benefits"} className="hover:underline font-medium">
             Benefits
           </Link>
-          <Link href={"#insights"} className="hover:underline font-medium">
+          <Link href={"/merchants"} className="hover:underline font-medium">
             Merchants
           </Link>
-          <Link href={"#demo"} className="hover:underline font-medium">
+          <Link href={"#fees"} className="hover:underline font-medium">
             Fees
           </Link>
         </div>

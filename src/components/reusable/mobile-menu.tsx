@@ -30,7 +30,7 @@ const MobileMenu = ({
         <button
           onClick={() => {
             setToggleMobileMenu((prev) => !prev);
-            router.push("/");
+            router.push("#product");
           }}
           className="hover:underline font-medium"
         >
@@ -48,7 +48,7 @@ const MobileMenu = ({
         <button
           onClick={() => {
             setToggleMobileMenu((prev) => !prev);
-            router.push("#insights");
+            router.push("/merchants");
           }}
           className="hover:underline font-medium"
         >
@@ -57,7 +57,7 @@ const MobileMenu = ({
         <button
           onClick={() => {
             setToggleMobileMenu((prev) => !prev);
-            router.push("#demo");
+            router.push("#fees");
           }}
           className="hover:underline font-medium"
         >

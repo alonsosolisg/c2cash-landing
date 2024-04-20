@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./button";
 
 const Footer = () => {
   return (
@@ -9,11 +10,7 @@ const Footer = () => {
         </div>
         <img className="w-10 h-10" src="/images/c2cash_logo.png" />
       </div>
-      <div className="px-[15px] pt-1.5 pb-[5px] bg-blue-600 rounded-2xl justify-center items-center gap-2.5 flex">
-        <div className="text-center text-white text-2xl font-bold font-['Avenir Next LT Pro']">
-          Get the App
-        </div>
-      </div>
+      <Button action={() => {}} text="Get the App" variant="primary" />
     </div>
   );
 };
