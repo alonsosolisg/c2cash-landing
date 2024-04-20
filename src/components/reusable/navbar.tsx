@@ -64,7 +64,7 @@ const Navbar = ({
             Fees
           </Link>
         </div>
-        <Button action={() => {}} text={"Contact Us"} variant={"primary"} />
+        <Button action={() => {}} text={"Get the App"} variant={"primary"} />
       </motion.div>
       <motion.div
         initial={{ y: -100 }}

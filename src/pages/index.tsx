@@ -1,4 +1,7 @@
+import Benefits from "@/components/home/benefits";
+import Fees from "@/components/home/fees";
 import Hero from "@/components/home/hero";
+import Footer from "@/components/reusable/footer";
 import MobileMenu from "@/components/reusable/mobile-menu";
 import Navbar from "@/components/reusable/navbar";
 import { AnimatePresence } from "framer-motion";
@@ -24,6 +27,9 @@ export default function Home() {
           toggleMobileMenu={toggleMobileMenu}
         />
         <Hero />
+        <Benefits />
+        <Fees />
+        <Footer />
       </main>
     </>
   );

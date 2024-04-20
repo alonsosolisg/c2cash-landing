@@ -17,11 +17,12 @@ const Hero = () => {
           </div>
         </div>
         <div className="w-fit text-center text-text2 xs:text-[20px] sm:text-[24px] lg:text-[28px] font-normal font-['Avenir Next LT Pro']">
-          Gain access to the local currency through crypto in a matter of hours
+          Gain access to the local currency by exchanging <br /> crypto with our
+          trusted network of merchants
         </div>
         <div className="justify-center lg:flex-row xs:flex-col items-center gap-[30px] inline-flex">
           <Button action={() => {}} text="Withdraw Cash" variant="primary" />
-          <Button action={() => {}} text="Buy Crypto" variant="secondary" />
+          <Button action={() => {}} text="Learn More" variant="secondary" />
         </div>
       </div>
       <div className="self-stretch lg:flex  xs:hidden px-[25px] gap-[25px] justify-between items-center">
@@ -35,7 +36,7 @@ const Hero = () => {
         </div>{" "}
         <div className="w-full h-[448px] widget-style bg-white rounded-[25px]" />
       </div>
-      <div className="self-stretch lg:hidden xs:flex px-[25px] justify-between items-center">
+      <div className="self-stretch lg:hidden xs:flex justify-between items-center">
         <div className="w-full h-[448px] widget-style bg-white rounded-[25px]" />
       </div>
     </div>
