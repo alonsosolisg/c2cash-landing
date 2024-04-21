@@ -19,7 +19,7 @@ const Hero = () => {
             Crypto <FaBitcoin className="text-accent" />?
           </div>
         </div>
-        <div className="w-fit text-center text-text2 xs:text-[20px] sm:text-[24px] lg:text-[28px] font-normal font-['Avenir Next LT Pro']">
+        <div className="w-fit text-center text-text2 xs:text-[20px] sm:text-[24px] lg:text-[28px] font-normal">
           Gain access to the local currency by exchanging <br /> crypto with a
           network of trusted merchants
         </div>

@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import localFont from "next/font/local";
+import Head from "next/head";
 
 const circular = localFont({
   src: "./fonts/circular-std-medium-500.ttf",
@@ -25,10 +26,15 @@ const avenir = localFont({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div
-      className={`${circular.variable} font-sans ${avenir.variable} font-sans`}
-    >
-      <Component {...pageProps} />
-    </div>
+    <>
+      <Head>
+        <link rel="icon" href="/images/c2cash_logo.ico" />
+      </Head>
+      <div
+        className={`${circular.variable} font-sans ${avenir.variable} font-sans`}
+      >
+        <Component {...pageProps} />
+      </div>
+    </>
   );
 }

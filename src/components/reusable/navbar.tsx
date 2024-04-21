@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FaBars } from "react-icons/fa";
 import Button from "./button";
+import { useRouter } from "next/router";
 
 const Navbar = ({
   toggleMobileMenu,
@@ -33,12 +34,14 @@ const Navbar = ({
       window.removeEventListener("scroll", handleScroll);
     };
   }, [prevScrollPos]);
+
+  const router = useRouter();
   return (
     <>
       <motion.div
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        transition={{ duration: 1, type: "tween" }}
+        transition={{ duration: 0.5, type: "tween" }}
         id="navbar"
         style={{
           backdropFilter: "blur(12px)",
@@ -51,17 +54,29 @@ const Navbar = ({
           <img className="w-[37px] h-[37px]" src="/images/c2cash_logo.png" />
         </Link>
         <div className="px-[50px] lg:text-xl xl:text-2xl justify-center items-center gap-[50px] flex">
-          <Link href={"#product"} className="hover:underline font-medium">
+          <Link
+            href={"/"}
+            className={`hover:underline font-medium ${
+              router.pathname === "/" ? "underline" : ""
+            }`}
+          >
             Product
           </Link>
-          <Link href={"#benefits"} className="hover:underline font-medium">
-            Benefits
-          </Link>
-          <Link href={"/merchants"} className="hover:underline font-medium">
+          <Link
+            href={"/merchants"}
+            className={`hover:underline font-medium ${
+              router.pathname === "/merchants" ? "underline" : ""
+            }`}
+          >
             Merchants
           </Link>
-          <Link href={"#fees"} className="hover:underline font-medium">
-            Fees
+          <Link
+            href={"/benefits"}
+            className={`hover:underline font-medium ${
+              router.pathname === "/benefits" ? "underline" : ""
+            }`}
+          >
+            Benefits
           </Link>
         </div>
         <Button action={() => {}} text={"Get the App"} variant={"primary"} />

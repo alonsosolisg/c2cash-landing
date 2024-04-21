@@ -30,38 +30,36 @@ const MobileMenu = ({
         <button
           onClick={() => {
             setToggleMobileMenu((prev) => !prev);
-            router.push("#product");
+            router.push("/");
           }}
-          className="hover:underline font-medium"
+          className={`hover:underline font-medium ${
+            router.pathname === "/" ? "underline" : ""
+          }`}
         >
           Product
         </button>
         <button
           onClick={() => {
             setToggleMobileMenu((prev) => !prev);
-            router.push("#benefits");
-          }}
-          className="hover:underline font-medium"
-        >
-          Benefits
-        </button>
-        <button
-          onClick={() => {
-            setToggleMobileMenu((prev) => !prev);
             router.push("/merchants");
           }}
-          className="hover:underline font-medium"
+          className={`hover:underline font-medium ${
+            router.pathname === "/merchants" ? "underline" : ""
+          }`}
         >
           Merchants
         </button>
+
         <button
           onClick={() => {
             setToggleMobileMenu((prev) => !prev);
-            router.push("#fees");
+            router.push("/benefits");
           }}
-          className="hover:underline font-medium"
+          className={`hover:underline font-medium ${
+            router.pathname === "/benefits" ? "underline" : ""
+          }`}
         >
-          Fees
+          Benefits
         </button>
       </div>
       <Button action={() => {}} text={"Get the App"} variant={"primary"} />
