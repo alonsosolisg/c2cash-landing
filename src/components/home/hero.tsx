@@ -1,6 +1,7 @@
 import React from "react";
 import { FaArrowRight, FaBitcoin, FaMoneyBill } from "react-icons/fa6";
 import Button from "../reusable/button";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -29,15 +30,39 @@ const Hero = () => {
         </div>
       </div>
       <div className="self-stretch lg:flex  xs:hidden px-[25px] gap-[25px] justify-between items-center">
-        <div className="w-full h-[448px] widget-style bg-white rounded-[25px]" />
+        <div className="w-full h-fit widget-style bg-white rounded-[25px]">
+          <Image
+            className="rounded-[25px]"
+            src={"/images/sc1.jpg"}
+            alt="c2c2c"
+            width={500}
+            height={500}
+          />
+        </div>
         <div>
           <FaArrowRight className="text-text text-3xl w-fit" />
         </div>
-        <div className="w-full h-[448px] widget-style bg-white rounded-[25px]" />
+        <div className="w-full h-fit widget-style bg-white rounded-[25px]">
+          <Image
+            className="rounded-[25px]"
+            src={"/images/sc2.jpg"}
+            alt="c2c"
+            width={500}
+            height={500}
+          />
+        </div>{" "}
         <div>
           <FaArrowRight className="text-text text-3xl w-fit" />
         </div>{" "}
-        <div className="w-full h-[448px] widget-style bg-white rounded-[25px]" />
+        <div className="w-full h-fit widget-style bg-white rounded-[25px]">
+          <Image
+            className="rounded-[25px]"
+            src={"/images/sc3.jpg"}
+            alt="c2c"
+            width={500}
+            height={500}
+          />
+        </div>
       </div>
       <div className="self-stretch lg:hidden xs:flex justify-between items-center">
         <div className="w-full h-[448px] widget-style bg-white rounded-[25px]" />
